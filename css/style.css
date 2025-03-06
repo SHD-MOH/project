@@ -1,47 +1,158 @@
 body{
+    
     background-color:#FFF3EE;
     font-family: "Roboto Slab", serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1/2fr 1fr 1/2fr ;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    row-gap: 16px;
+    margin: 0px;
+    
+
 }
 
 header{
+    margin: 8px;
+    grid-area: header;
     display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1/3fr;
+    grid-template-rows: 1/4fr 1/3fr;
     grid-template-areas: 
     'img'
     'nav';
-    row-gap: 16px;
-    
-    
-    
+    padding: 16px;
 }
 
 nav{
     grid-area: nav;
     display: flex;
-    align-items: center;
     justify-content:space-evenly ;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 16px;
    
     
 }
 
 img{
     grid-area: img;
-    height: 50%;
+    height: 30%;
     align-self: center;
     justify-self: center;
    
     
+   
+    
+    
+}
+main{
+     margin: 8px;
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1/3fr 1fr ;
+    grid-template-areas: 
+    'section section section'
+    'article article aside';
+    row-gap: 24px;
+    
+    
     
 }
 
-.button{
-    background-color: #EAE0DA;
-    border: none ;
-    width: 15%;
-    border-radius: 10px;
-    padding:4px;
+#card{
+    background-color: beige;
+    display: inline-block;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px;
+    padding-bottom: 32px;
+    border-radius: 30px;
+    
+
+}
+aside{
+
+    grid-area: aside;
+    border-radius:30px;
+    
+    
+}
+article{
+
+    grid-area: article;
+    
+
+}
+section{
+
+    display: block;
+    height:fit-content;
+    width: fit-content;
+    padding: 16px;
+    padding-top: 0px;
+    background-color: #F7CFD8;
+    border-radius: 30px;
+    grid-area: section;
     box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.2);
+    
+
+}
+
+.button{
+    
+    background-color: #EAE0DA;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.2);
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    display: block;
+    width: 150px;
+    
+    
+
+    
+    
+}
+
+footer{
+
+    background-color: #898fb5;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+}
+
+.fontclass{
+
+    font-weight: 700;
+    font-size: larger;
+    font-style: italic;
+    color:#3674B5;
+}
+.comments{
+
+    font-weight: 600;
+    font-size: medium;
+    color:#859ab0;
+}
+.cat{
+    border-radius: 30px;
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.2);
+    width: 40vb;
+
+}
+
+footer p{
+
+    font-weight: 300;
+    font-style: italic;
+
     
 }
 
