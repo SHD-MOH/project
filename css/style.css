@@ -1,5 +1,47 @@
 body{
     background-color:#FFF3EE;
+    font-family: "Roboto Slab", serif;
+}
+
+header{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1/3fr;
+    grid-template-areas: 
+    'img'
+    'nav';
+    row-gap: 16px;
+    
+    
+    
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+   
+    
+}
+
+img{
+    grid-area: img;
+    height: 50%;
+    align-self: center;
+    justify-self: center;
+   
+    
+    
+}
+
+.button{
+    background-color: #EAE0DA;
+    border: none ;
+    width: 15%;
+    border-radius: 10px;
+    padding:4px;
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.2);
     
 }
 
