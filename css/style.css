@@ -10,8 +10,10 @@ body{
     'main'
     'footer';
     row-gap: 16px;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
     
     
 
@@ -27,9 +29,26 @@ nav{
     grid-area: nav;
     display: flex;
     justify-content: space-between;
+    justify-items: center;
+    align-items: center;
     flex-wrap: wrap;
     
-   
+    
+}
+
+.fbutton{
+    background-color: #F3D3BD;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.2);
+    font-family: "Libre Baskerville", serif;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
     
 }
 #logo{
@@ -43,6 +62,8 @@ nav{
     column-gap: 30px;
     align-items: center;
     justify-items: center;
+    align-self: center;
+    justify-self: center;
 }
 .navbutton{
     
@@ -50,32 +71,33 @@ nav{
     background-color:#FFFFFF ;
     border: none;
     font-family: "Libre Baskerville", serif;
-    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
    
     
-}
+
 
 #logoimg{
     grid-area: img;
     height: 60px;
     float:left;
 }
-.fbutton{
 
+hr{
+    color:#7A7A7A;
     
 }
-hr{
-    color: #D9D9D9;
-}
+
+
 main{
-    margin: 8px;
+    
     display: grid;
     grid-area: main;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1/3fr 1fr ;
     grid-template-areas: 
     'section section section'
-    'aside aside aside';
+    '. . aside';
     row-gap: 24px;
     
     
@@ -90,7 +112,7 @@ section{
 }
 #fp{
 
-    font-size: 64px;
+    font-size: 56px;
     font-weight: 400;
     margin-left: 50px;
     text-shadow: 
@@ -100,7 +122,7 @@ section{
 }
 #sp{
 
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 400;
     margin-left: 100px;
     text-shadow: 
@@ -110,29 +132,18 @@ section{
 }
 #thp{
 
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
-    color: #7A7A7A;
     margin-left: 150px;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.5), 
+        4px 4px 8px rgba(0, 0, 0, 0.3); 
+   
  
 }
 
 
-#card{
-    
-    width: 30vw;
-    height: 40vh;
-    background-color: beige;
-    display: inline-block;
-    text-align: center;
-    width: fit-content;
-    height: fit-content;
-    padding: 8px;
-    padding-bottom: 32px;
-    border-radius: 30px;
-    
 
-}
 aside{
     display: block;
     grid-area: aside;
@@ -148,30 +159,20 @@ aside{
 
 
 footer{
-    
-    
+
     grid-area: footer;
     display: flex;
     justify-content: center;
 }
 
-.fontclass{
 
-    font-weight: 700;
-    font-size: larger;
-    font-style: italic;
-    color:#3674B5;
-}
-.comments{
 
-    font-weight: 600;
-    font-size: medium;
-    color:#859ab0;
-}
-.cat{
+.pic{
     border-radius: 10px;
     box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.2);
-    width: 100%;
+    padding: 15px;
+    margin: 10px;
+    width: 60vb;
    
 
 }
@@ -180,11 +181,29 @@ footer p{
 
     font-weight: 300;
     font-style: italic;
-    color: #F3D3BD;
+    color: #7A7A7A;
     
 }
 
 @media only screen and (max-width: 720px) {
+
+
+        main{
+    
+            display: grid;
+            grid-area: main;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1/3fr 1fr ;
+            grid-template-areas: 
+            'section section section'
+            'aside aside aside';
+            row-gap: 24px;
+            
+            
+            
+        }
+
+   
     
     
     nav{
@@ -192,13 +211,62 @@ footer p{
         display: flex;
         flex-flow: column;
         align-items: center;
-        justify-content: space-between;
+        justify-items: center;
         flex-wrap: wrap;
         row-gap: 16px;
+        align-self: center;
+        justify-self: center;
         
        
         
     }
+    #logo{
+        display: flex;
+        column-gap: 8px;
+        align-items: center;
+        
+    }
 
+    #fp{
+
+        font-size: 48px;
+        font-weight: 400;
+        margin-left: 50px;
+        text-shadow: 
+            2px 2px 4px rgba(0, 0, 0, 0.5), 
+            4px 4px 8px rgba(0, 0, 0, 0.3); 
+       
+    }
+    #sp{
+    
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 50px;
+        text-shadow: 
+            2px 2px 4px rgba(0, 0, 0, 0.5), 
+            4px 4px 8px rgba(0, 0, 0, 0.3); 
+       
+    }
+    #thp{
+    
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 50px;
+        text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.5), 
+        4px 4px 8px rgba(0, 0, 0, 0.3); 
+   
+     
+    }
+    
+    .pic{
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        margin: 10px;
+        width: 30vb;
+       
+    
+    }
 }
 
