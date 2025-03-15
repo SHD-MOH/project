@@ -1,0 +1,38 @@
+header{
+   
+        display: flex;
+        column-gap: 30px;
+        align-items: center;
+        justify-items: center;
+ 
+}
+
+nav{
+    margin-top: 10px;
+    background-image: url(../media/catheader.jpg);
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+#section1{
+    color: bl;
+}
+
+h1{
+    color: white;
+    align-items: center;
+}
+
+#logo{
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    margin-left: 40px;
+}
+
+#logoimg{
+    grid-area: img;
+    height: 60px;
+    float:left;
+}
