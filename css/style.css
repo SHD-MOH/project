@@ -97,7 +97,7 @@ main{
     grid-template-rows: 1/3fr 1fr ;
     grid-template-areas: 
     'section section section'
-    'none none aside';
+    '. . aside';
     row-gap: 24px;
     
     
